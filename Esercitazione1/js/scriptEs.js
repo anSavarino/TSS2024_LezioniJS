@@ -23,7 +23,7 @@ elAnno.innerHTML = eta;
 
 console.log(eta);
 
-/*let primoNum = Number(window.prompt("Facciamo una somma. Inserisci il primo numero"));
+let primoNum = Number(window.prompt("Facciamo una somma. Inserisci il primo numero"));
 let secondoNum = Number(window.prompt("Inserisci il secondo numero"));
 
 let somma2 = primoNum + secondoNum;
@@ -31,4 +31,8 @@ let somma2 = primoNum + secondoNum;
 let elSomma = document.getElementById("somma"); 
 
 let somma = "Somma: " + somma2;
-elSomma.innerHTML = somma;*/
+elSomma.innerHTML = somma;
+
+
+git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
