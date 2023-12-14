@@ -14,6 +14,7 @@ console.log("Il prodotto dei due numeri è: " + prodotto);
 console.log("Il quoziente dei due numeri è: " + quoziente.toFixed(2)); //to.Precision(3)
 
 // Voglio stamparre qusti risultati nella pagina
+
 // 1. Recupero l'elemento nel quale stampare
 
 let elRisultati = document.getElementById("risultati"); 
