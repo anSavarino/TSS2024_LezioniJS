@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Età</title>
+  </head>
+  <body>
+    <!-- Crea un form con due caselle di input e un pulsante. Nella prima casella verrà inserito l’anno di
+    nascita dell’utente, nella seconda verrà inserito l’anno corrente oppure un anno a scelta. Al click sul
+    bottone verrà calcolata l’età dell’utente. -->
+
+    <h1>La tua età</h1>
+    <form action="" method="get">
+      <p>
+        <label for="annoDiNascita">Inserisci il tuo anno di nascita</label
+        ><br />
+        <input type="number" name="annoDiNascita" id="annoDiNascita" />
+      </p>
+      <p>
+        <label for="anno">Inserisci un anno</label><br />
+        <input type="number" name="anno" id="anno" />
+      </p>
+      <button type="button" onclick="calcolaEta()">Calcola età</button><br />
+
+      <h3 id="etaStampa"></h3>
+    </form>
+    <script>
+      function calcolaEta() {
+        let annoDiNascita = document.getElementById('annoDiNascita').value;
+        console.log(annoDiNascita);
+        let anno = document.getElementById('anno').value;
+        console.log(anno);
+        let eta = anno - annoDiNascita;
+        console.log(eta);
+
+        document.getElementById('etaStampa').innerHTML = `La tua età nel ${anno} è ${eta} anni`;
+      }
+    </script>
+  </body>
+</html>

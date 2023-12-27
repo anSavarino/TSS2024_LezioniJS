@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Programma che esegue la divisione e la moltiplicazione tra due numeri. L’utente potrà
+scegliere tramite pulsante quale delle due operazioni eseguire (form input). Il risultato va mostrato in HTML -->
+
+    <h1>Prodotto e Divisione</h1>
+    <form action="">
+      <p>
+        <label for="num1">Inserisci il primo numero</label><br />
+        <input type="number" name="num1" id="num1" required/>
+      </p>
+      <p>
+        <label for="num2">Inserisci il secondo numero</label><br />
+        <input type="number" name="num2" id="num2" required />
+      </p>
+      <input type="submit" value="Prodotto" onclick="calcolaProdotto(); return false;">
+      <input type="submit" value="Divisione" onclick="calcolaDivisione(); return false;"><br>
+    
+      <h3 id="prod"></h3>
+    </form>
+    <script src="./js/script04.js"></script>
+  </body>
+</html>
