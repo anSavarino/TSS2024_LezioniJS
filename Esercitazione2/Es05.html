@@ -8,10 +8,12 @@
 <body>
     <!-- Scrivere un programma che estrae e stampa in console l’estensione di un file -->
 
-    <h1>Estensione del file</h1>
-    <p><input type="file" name="inputFile" id="inputFile"><br></p>
-    <p><input type="submit" value="Stampa Estensione" onclick="estraiEstensione()"></p>
-    <p id="risultato"></p>
+    <form action="" method="get">
+        <h1>Estensione del file</h1>
+        <p><input type="file" name="inputFile" id="inputFile"><br></p>
+        <p><input type="submit" value="Stampa Estensione" onclick="estraiEstensione(); return false;"></p>
+        <p id="risultato"></p>
+    </form>
 <script src="./js/script05.js"></script>
 </body>
 </html>
