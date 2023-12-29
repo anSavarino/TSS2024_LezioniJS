@@ -1,35 +1,60 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div>
-        <fieldset>
-            <legend>Esercizio 7</legend>
-            <!-- Scrivere un programma per trovare il valor più vicino a 100 tra una coppia di numeri forniti, se
+      <fieldset>
+        <legend>Esercizio 7</legend>
+        <!-- Scrivere un programma per trovare il valor più vicino a 100 tra una coppia di numeri forniti, se
             sono uguali ritorna un avviso -->
-            <form action="">
-                <p>
-                    <label for="num1">Numero 1</label><br>
-                    <input type="number" name="num1" id="num1">
-                </p>
-                <p>
-                    <label for="num2">Numero 2</label><br>
-                    <input type="number" name="num2" id="num2">
-                </p>
-                <button type="button" onclick="vicinoCento(); return false;">Più vicino a 100</button>
-                <p id="risultatoCento">Qual è il più vicino al 100?</p>
-            </form>
-        </fieldset>
+        <form action="">
+          <p>
+            <label for="num1">Numero 1</label><br />
+            <input type="number" name="num1" id="num1" />
+          </p>
+          <p>
+            <label for="num2">Numero 2</label><br />
+            <input type="number" name="num2" id="num2" />
+          </p>
+          <button type="button" onclick="vicinoCento(); return false;">
+            Più vicino a 100
+          </button>
+          <p id="risultatoCento">Qual è il più vicino al 100?</p>
+        </form>
+      </fieldset>
     </div>
     <div>
-        <fieldset>
-            <legend>Esecizio 8</legend>
-        </fieldset>
+      <fieldset>
+        <legend>Esecizio 8</legend>
+        <!-- Esercizio 8 – Scrivere un programma che inverte una parola fornita in un campo di testo nel HTML e un
+                bottone che chiama la funzione -->
+        <p>
+          <label for="testo8">Inserisci una parola</label><br />
+          <input type="text" name="testo8" id="testo8" />
+        </p>
+        <button type="button" onclick="inverti(); return false;">
+          Inverti parola</button
+        ><br />
+        <p id="invertedText">Testo Invertito</p>
+      </fieldset>
+      <fieldset>
+        <legend>Esercizio 9</legend>
+        <!-- Esercizio 9 – Scrivi un programma che accetta una frase come parametro e imposta in upper-case l’iniziale
+        di ogni singola parola -->
+        <p>
+          <label for="testo9">Inserisci una frase</label><br />
+          <input type="text" name="testo9" id="testo9" />
+        </p>
+        <button type="button" onclick="inserisciUpperCase(); return false;">
+            Inserisci Upper Case</button
+          ><br />
+          <p id="fraseUC">Frase in UpperCase</p>
+      </fieldset>
     </div>
     <script src="./js/script07.js"></script>
-</body>
+  </body>
 </html>
