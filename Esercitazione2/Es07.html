@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Esercizi dal 7 al</title>
   </head>
   <body>
+    <h1>Esercizi dal 7 al 17</h1>
     <div>
       <fieldset>
         <legend>Esercizio 7</legend>
@@ -27,11 +28,12 @@
         </form>
       </fieldset>
     </div>
+
     <div>
       <fieldset>
         <legend>Esecizio 8</legend>
         <!-- Esercizio 8 – Scrivere un programma che inverte una parola fornita in un campo di testo nel HTML e un
-                bottone che chiama la funzione -->
+                  bottone che chiama la funzione -->
         <p>
           <label for="testo8">Inserisci una parola</label><br />
           <input type="text" name="testo8" id="testo8" />
@@ -41,18 +43,124 @@
         ><br />
         <p id="invertedText">Testo Invertito</p>
       </fieldset>
+    </div>
+    <div>
       <fieldset>
         <legend>Esercizio 9</legend>
         <!-- Esercizio 9 – Scrivi un programma che accetta una frase come parametro e imposta in upper-case l’iniziale
-        di ogni singola parola -->
+          di ogni singola parola -->
         <p>
           <label for="testo9">Inserisci una frase</label><br />
           <input type="text" name="testo9" id="testo9" />
         </p>
         <button type="button" onclick="inserisciUpperCase(); return false;">
-            Inserisci Upper Case</button
-          ><br />
-          <p id="fraseUC">Frase in UpperCase</p>
+          Inserisci Upper Case</button
+        ><br />
+        <p id="fraseUC">Frase in UpperCase</p>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Esercizio 10</legend>
+        <!-- Esercizio 10 – Crea una funzione in javascript per generare una stringa di caratteri casuali specificandone la
+          lunghezza. Utilizza l’intero alfabeto e i numeri (form input) -->
+        <form action="">
+          <p>
+            <label for="stringL">Inserisci la lunghezza della stringa</label
+            ><br />
+            <input type="number" name="stringL" id="stringL" />
+          </p>
+          <input
+            type="submit"
+            value="Genera stringa casuale"
+            onclick="generaStringa(); return false;"
+          />
+        </form>
+        <p id="casualString">Stringa casuale:</p>
+      </fieldset>
+    </div>
+
+    <div>
+      <fieldset>
+        <legend>Esercizio 11</legend>
+        <!-- Scrivi un programma che accetta due numeri interi e mostra il maggiore tra i due. (Utilizza
+          window.prompt e .alert) -->
+        <button type="button" onclick="startProgram();return false;">
+          Inizia
+        </button>
+      </fieldset>
+    </div>
+
+    <div>
+      <fieldset>
+        <legend>Esecizio 12</legend>
+        <!-- Esercizio 12 – Esercizio 8 utilizzando un ciclo for -->
+        <p>Già utilizzato il ciclo for nell'esercizio 8</p>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Esercizio 13</legend>
+        <!-- Esercizio 13 - Scrivi un programma che stampa tutti gli interi da 1 a 100. Per i multipli di 3 stampa “Ciao”,
+        per i multipli di 5 stampa “Mondo”. Per i multipli sia di 3 , sia di 5 stamperà “Ciao, Mondo” -->
+        <button type="button" onclick="ciaoMondo()">
+          Ciao Mondo in console
+        </button>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Esercizio 14</legend>
+        <!-- Esercizio 14 – Scrivi un programma per trasformare un array di elementi (stringhe) in un’unica stringa,
+        utilizza tutti i metodi che conosci -->
+        <p >
+          <p id="htmlArray">Array:</p>
+        </p>
+        <button type="button" onclick="trasformaArray(); return false;">
+          Trasforma Array</button
+        ><br />
+        <p id="fraseUS">Stringa:</p>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Esercizio 15</legend>
+        <!-- Esercizio 15 – Scrivi un programma per pescare un elemento a caso in un array di numeri -->
+        <p>Array: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</p>
+        <button type="button" onclick="numCasuale()">Pesca un numero</button>
+        <p id="numPescato">Numero pescato: </p>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Esercizio 16</legend>
+        <!-- Esercizio 16 – Trova la parola all’interno del seguente testo:
+        “Java Lorem ipsum sit dolor Java aliqua clara et pulcra sunt Java”, quando la trovi stampa la parola,
+        altrimenti stampa: “parola non trovata”. -->
+        <p>Testo</p>
+        <p id="testo162">“Java Lorem ipsum sit dolor Java aliqua clara et pulcra sunt Java”</p>
+        <p>
+          <label for="testo16">Inserisci una parola</label><br />
+          <input type="text" name="testo16" id="testo16" />
+        </p>
+        <button type="button" onclick="trovaParola(); return false;">
+          Trova parola</button
+        ><br />
+        <p id="parola16"></p>
+
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Esercizio 17</legend>
+        <!-- Esercizio 17 - Crea una pagina web in cui è possibile vedere l’aggiornamento della data
+        istantaneamente. In base alle ore del giorno stampa un saluto:
+        dalle 00 alle 02 -> Buona notte
+        dalle 02 alle 12 -> Buon giorno
+        dalle 12 alle 21 -> Buona sera
+        dalle 21 alle 24 -> Buona notte -->
+        <p id="ora"></p>
+        <p id="saluto"></p>
       </fieldset>
     </div>
     <script src="./js/script07.js"></script>
