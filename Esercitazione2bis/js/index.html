@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>esercitazione2</title>
+  </head>
+  <body>
+    <h1>esercitazione2</h1>
+    <fieldset>
+      <legend>Esercizio 1</legend>
+      <!-- Es1 Scrivi un programma per calcolare moltiplicazione e divisione di due numeri (input utente) -->
+      <p>
+        <label for="num1">Numero 1</label><br />
+        <input type="number" name="num1" id="num1" value="0" /><br />
+        <label for="num2">Numero 2</label><br />
+        <input type="number" name="num2" id="num2" value="0" />
+      </p>
+      <button type="button" onclick="calcoloOperazioni(); return false;">Moltiplica e Dividi</button>
+      <p id="moltiplicazione">Moltiplicazione:</p>
+      <p id="divisione">Divisione:</p>
+    </fieldset>
+    <fieldset>
+      <legend>Esercizio 2</legend>
+      <!-- Es2 Scrivi un programma che prende e stampa lo URL della pagina -->
+      <p>
+          <button type="button" onclick="stampaURL();return false;">Stampa URL</button>
+          <p id="pageURL">URL:</p>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Esercizio 3</legend>
+      <p>Non c'era un esercizio numero 3</p>
+    </fieldset>
+    <fieldset>
+      <legend>Esercizio 4</legend>
+      <!-- Es4 Scrivi un programma che calcola, in valore assoluto, la differenza tra uno specifico numero
+        e 19. Ritorna il triplo del valore della differenza se il numero specificato è maggiore di 19 -->
+        <p>
+            <label for="num4">Inserisci un numero</label><br />
+            <input type="number" name="num4" id="num4" value="0" /><br />
+            <button type="button" onclick="differenza(); return false;">Calcola</button>    
+        </p>
+        <p id="risultato4"></p>
+    </fieldset>
+    <fieldset>
+      <legend>Esercizio 5</legend>
+    </fieldset>
+    <fieldset>
+      <legend>Esercizio 6</legend>
+    </fieldset>
+    <fieldset>
+      <legend>Esercizio 7</legend>
+    </fieldset>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
