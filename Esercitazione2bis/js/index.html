@@ -40,17 +40,41 @@
             <label for="num4">Inserisci un numero</label><br />
             <input type="number" name="num4" id="num4" value="0" /><br />
             <button type="button" onclick="differenza(); return false;">Calcola</button>    
-        </p>
-        <p id="risultato4"></p>
-    </fieldset>
-    <fieldset>
-      <legend>Esercizio 5</legend>
-    </fieldset>
-    <fieldset>
-      <legend>Esercizio 6</legend>
+          </p>
+          <p id="risultato4"></p>
+        </fieldset>
+        <fieldset>
+          <legend>Esercizio 5</legend>
+          <!-- Es5 Scrivi un programma che controlla se un dato intero si trova tra 20 e 100 o tra 20 e 400 -->
+          <p>
+            <label for="num5">Inserisci un numero</label><br />
+            <input type="number" name="num5" id="num5" value="0" /><br />
+            <button type="button" onclick="controllo(); return false;">Controlla</button>
+          </p>
+          <p id="risultato5"></p>
+          
+        </fieldset>
+        <fieldset>
+          <legend>Esercizio 6</legend>
+          <!-- Es6 Scrivi un programma per rimuovere un carattere in una specifica posizione di una data
+            stringa e ritorna la nuova stringa -->
+            <p id="stringa6"></p>
+            <p>
+              <label for="num6">In che posizione vuoi togliere il carattere?</label><br />
+              <input type="number" name="num6" id="num6" value="0" min="0" max=""/><br />
+              <small>Puoi scegliere un numero da 0 a </small><small id="strlen"></small><br>
+              <button type="button" onclick="rimuoviCarattere(); return false;">Controlla</button>
+            </p>
+            <p id="risultato6"></p>
     </fieldset>
     <fieldset>
       <legend>Esercizio 7</legend>
+      <!-- Es7 Scrivi un programma che, a partire da una stringa fornita, ne crea un'altra inserendo la
+prima lettera all'inizio e alla
+fine della stringa. Esempio (mario -> mmariom) -->
+        <p>Utilizzo la stringa dell'esercizio precedente </p>
+        <button type="button" onclick="inserisciIF(); return false;">Inserisci primo carattere</button>
+        <p id="risultato7"></p>
     </fieldset>
 
     <script src="./js/script.js"></script>
