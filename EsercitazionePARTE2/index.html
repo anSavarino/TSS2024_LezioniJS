@@ -10,9 +10,9 @@
     <fieldset>
       <legend>Es1</legend>
       <!-- Scrivi una funzione javascript che accetti due argomenti, una stringa e una lettera. La funzione conterà il numero di occorrenze della specifica lettera nella stringa -->
-      <label for="char">Stringa</label>
+      <label for="char">Stringa</label><br>
       <input type="text" name="strigna" id="stringa" /><br />
-      <label for="char">Carattere</label>
+      <label for="char">Carattere</label><br>
       <input type="text" name="char" id="char" maxlength="1" /><br />
       <button type="button" onclick="occorrenze(stringa, char); return false;">
         Occorrenze
@@ -28,8 +28,8 @@
     <fieldset>
       <legend>Es3</legend>
       <!-- Scrivi una funzione javascript che accetta una stringa come parametro e trova la parola più lunga all’interno della frase. Es (mi chiamo Massimiliano -> Massimiliano). -->
-      <label for="testo">Stringa</label><br>
-      <input type="text" name="testo" id="testo">
+      <label for="testo">Stringa</label><br />
+      <input type="text" name="testo" id="testo" /><br>
       <button type="button" onclick="parolaLunga(); return false">
         Parola Lunga
       </button>
@@ -37,52 +37,43 @@
     <fieldset>
       <legend>Es4</legend>
       <!-- Dall’html recupera una stringa e ruotala da sinistra verso destra rimuovendo una lettera dal fondo ed inserendola all’inizio, deve essere visibile l’animazione -->
-      <label for="testo2">Stringa</label><br>
-      <input type="text" name="testo2" id="testo2">
-      <button type="button" onclick="ruota(); return false">
-        Ruota
-      </button>
+      <label for="testo2">Stringa</label><br />
+      <input type="text" name="testo2" id="testo2" /><br>
+      <button type="button" onclick="ruota(); return false">Ruota</button>
     </fieldset>
     <fieldset>
       <legend>Es5</legend>
       <!-- Scrivi un programma che accetta (da finestra) un numero come input e inserisce un dash (-) tra due numeri pari. Es ( 823486 -> 8-234-8-6 ) -->
-      <button type="button" onclick="startDash(); return false">
-        Dash
-      </button>
+      <button type="button" onclick="startDash(); return false">Dash</button>
     </fieldset>
     <fieldset>
       <legend>Es6</legend>
-      <!-- Scrivi un programma che stampa un pattern come il seguente triangolo, chiedendo all’utente il numero di righe:
-            1
-            12
-            123
-            1234
-            12345 -->
-      <button type="button" onclick="pattern2(); return false">Pattern2</button>
+      <!-- Scrivi un programma per inserire degli elementi in un array vuoto e farli stampare quando viene premuto un bottone -->
+      <button type="button" onclick="startElementi(); return false">
+        Start Elementi
+      </button>
+      <p id="newButton"></p>
     </fieldset>
     <fieldset>
       <legend>Es7</legend>
-      <!-- Scrivi un programma che stampa il seguente pattern (chiede all’utente il numero):
-            1
-            2 3
-            4 5 6
-            7 8 9 10 -->
-      <label for="num1">Numero</label><br />
-      <input type="number" name="num1" id="num1" value="0" /><br />
-      <button type="button" onclick="pattern3(); return false">Pattern3</button>
+      <!-- Scrivi una funzione javascript che rimuova gli elementi duplicati da un array -->
+      <button type="button" onclick="rimuoviDuplicati(); return false">
+        Rimuovi Duplicati
+      </button>
     </fieldset>
     <fieldset>
       <legend>Es8</legend>
-      <!-- Scrivi un programma che stampa il seguente pattern (chiede all’utente il numero di righe):
-        @
-        @@
-        @@@
-        @@@@
-        @@@@@
-        @@@@@@ -->
-      <label for="num1">Numero di righe</label><br />
-      <input type="number" name="num2" id="num2" value="0" /><br />
-      <button type="button" onclick="pattern4(); return false">Pattern4</button>
+      <!-- Dati due array, calcolare la somma degli elementi presenti nello stesso indice. Esempio:
+      array1 = [1,0,2,4,6]
+      array2 = [0,4,5,8,7]
+      Output = [1,4,7,12,13]-->
+      
+      <button type="button" onclick="sommaElementi(); return false">Somma Elementi</button>
+    </fieldset>
+    <fieldset>
+      <legend>Es9</legend>
+      <!-- Scrivi una funzione che unisca due array rimuovendo gli elementi in comune.-->
+      <button type="button" onclick="unisciArray(); return false">Unisci Array</button>
     </fieldset>
     <script src="./js/script2.js"></script>
   </body>
