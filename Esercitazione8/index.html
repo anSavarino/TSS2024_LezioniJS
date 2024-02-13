@@ -58,10 +58,44 @@
                         </button>
                     </div>
                 </div>
-            </div>
 
+            <fieldset>
+                <legend>Aggiungi Libro</legend>
+                <form action="">
+                    <label for="titolo">titolo</label><br>
+                    <input type="text" id="titolo" value="miotitolo"><br>
+                    
+                    <label for="copertina">copertina</label><br>
+                    <input type="text" id="copertina"><br>
+                    
+                    <label for="autore">autore</label><br>
+                    <input type="text" id="autore"><br>
+                    
+                    <label for="trama">trama</label><br>
+                    <input type="text" id="trama"><br>
+                    
+                    <label for="prezzo">prezzo</label><br>
+                    <input type="text" id="prezzo"><br>
+                    
+                    <label for="personaggi">personaggi</label><br>
+                    <input type="text" id="personaggi"><button class="btn btn-primary" id="btnPers">+</button>
+                    <button id="btnAddLibro">Add Libro</button>
+                </form>
+            </fieldset>
+
+            <section>
+                <h2 id="antTitolo"></h2>
+                <img id="antCoper"></img>
+                <h5 id="antAutore"></h5>
+                <p id="antTrama"></p>
+                <p id="antPrezzo"></p>
+                <ul id="antPersonaggi"></ul>
+            </section>
+
+            </div>
+            <!-- aggiungi libro. deve essere presente un form con i relativi campi titolo locandina (url) autore trama prezzo e personaggi -->
             
-        </main>
+        </main> 
         <footer>
             <!-- place footer here -->
         </footer>
