@@ -28,9 +28,9 @@ let libri = [
   ),
   new Libro(
     "Il Mondo Al contrario",
-    "https://m.media-amazon.com/images/I/61VfPKjuuPL._SY466_.jpg",
+    "https://m.media-amazon.com/images/I/61VfPKjuuPL._SL1500_.jpg",
     "Roberto Vannacci",
-    "“Il Mondo al contrario” vuole infatti provocatoriamente rappresentare lo stato d’animo di tutti quelli che, come me, percepiscono negli accadimenti di tutti i giorni una dissonante e fastidiosa tendenza generale che si discosta ampiamente da quello che percepiamo come sentire comune, come logica e razionalità",
+    "“Il Mondo al contrario” vuole infatti provocatoriamente rappresentare lo stato d’animo di tutti quelli che, come me, percepiscono negli accadimenti di tutti i giorni una dissonante e fastidiosa tendenza generale che si discosta ampiamente da quello che percepiamo come sentire comune, come logica e razionalità.",
     ["Gli italiani stupidi", "Quello scemo di Vannacci"],
     19.76
   ),
@@ -106,31 +106,42 @@ function indietro() {
 
 btnAvanti.onclick = avanti;
 btnIndietro.onclick = indietro;
-let titolo = document.querySelector("#titolo").value;
-let copertina = document.querySelector("#copertina").value;
-let btnAddLibro = document.querySelector("#btnAddLibro");
+let titolo = document.querySelector("#titolo");
+let copertina = document.querySelector("#copertina");
+let autore = document.querySelector("#autore");
+let trama = document.querySelector("#trama");
+let prezzo = document.querySelector("#prezzo");
 let arrPersonaggi = [];
-btnAddLibro.addEventListener("click", function () {
-  
-  let l = new Libro(
-    document.querySelector("#titolo").value,
-    document.querySelector("#copertina").value,
-    document.querySelector("#autore").value,
-    document.querySelector("#trama").value,
-    arrPersonaggi,
-    document.querySelector("#prezzo").value);
-    
-    arrPersonaggi = [];
-    console.log("libro creato");
-    libri.push(l);
-    console.log("libro pushato");
-    event.preventDefault();
-});
+let btnAddLibro = document.querySelector("#btnAddLibro");
 
+
+btnAddLibro.addEventListener("click", function () {
+  let l = new Libro(
+    titolo.value,
+    copertina.value,
+    autore.value,
+    trama.value,
+    arrPersonaggi,
+    prezzo.value
+  );
+
+  console.log("libro creato");
+  libri.push(l);
+  i=libri.length-1;
+  mostraLibro(i);
+  console.log("libro pushato");
+  arrPersonaggi = [];
+  event.preventDefault();
+});
 
 btnPers = document.querySelector("#btnPers");
 
 btnPers.addEventListener("click", function () {
-  arrPersonaggi += document.querySelector("#personaggi").value;
+  console.log("Inserisco personaggio");
+  arrPersonaggi.push(document.querySelector("#personaggi").value);
+  console.log("Personaggio inserito");
+  event.preventDefault();
+});
 
-})
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
