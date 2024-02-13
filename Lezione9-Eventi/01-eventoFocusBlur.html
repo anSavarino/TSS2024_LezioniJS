@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Focus e Blur</h1>
+
+<input type="text" id="nome" placeholder="il tuo nome">
+
+<div id="demo"></div>
+
+<script>
+    let nome = document.querySelector('#nome');
+
+    nome.addEventListener("focus", function () {
+        demo.innerHTML = "Devi inseire il tuo nome";
+    });
+
+    //Con funzione anonima
+    // nome.addEventListener("blur", function () {
+    //     if (nome.value != "") {
+    //         demo.innerHTML = `Ciao ${nome.value}`;
+    //     }else{
+    //         demo.innerHTML = `Non hai scritto nulla`;
+    //     }
+    // })
+
+    // Funzione denominata
+    // nome.addEventListener("blur", scriviNome);
+
+    // function scriviNome() {
+    //     if (nome.value != "") {
+    //         demo.innerHTML = `Ciao ${nome.value}`;
+    //     }else{
+    //         demo.innerHTML = `Non hai scritto nulla`;
+    //     }
+    // }
+    
+    function scriviNome(nome) {
+        if (nome != "") {
+            demo.innerHTML = `Ciao ${nome}`;
+        }else{
+            demo.innerHTML = `Non hai scritto nulla`;
+        }
+    }
+    nome.addEventListener("blur", function () {
+        let nomeUtente = nome.value;
+        scriviNome(nomeUtente);
+    })
+</script>
+
+</body>
+</html>
