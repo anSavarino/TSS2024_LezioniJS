@@ -137,11 +137,54 @@ btnAddLibro.addEventListener("click", function () {
 btnPers = document.querySelector("#btnPers");
 
 btnPers.addEventListener("click", function () {
+  personaggiAnte.innerHTML = "";
   console.log("Inserisco personaggio");
   arrPersonaggi.push(document.querySelector("#personaggi").value);
   console.log("Personaggio inserito");
+  arrPersonaggi.forEach(personaggio =>{
+    personaggiAnte.innerHTML += "<li>" + personaggio + "</li>";
+  });
   event.preventDefault();
 });
 
+// Tooltip bs
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+// Anteprima
+let titoloInp = document.querySelector("#titolo");
+let titoloAnte = document.querySelector("#titoloAnte");
+
+titoloInp.addEventListener("blur", function(){
+    titoloAnte.innerHTML = titoloInp.value;
+});
+
+
+let imgInp = document.querySelector("#copertina");
+let imgAnte = document.querySelector("#imgAnte");
+imgInp.addEventListener("blur", function(){
+    imgAnte.setAttribute("src", imgInp.value);
+});
+
+let autoreInp = document.querySelector("#autore");
+let autoreAnte = document.querySelector("#autoreAnte");
+
+autoreInp.addEventListener("blur", function(){
+    autoreAnte.innerHTML = autoreInp.value;
+})
+
+let tramaInp = document.querySelector("#trama");
+let tramaAnte = document.querySelector("#tramaAnte");
+
+tramaInp.addEventListener("blur", function(){
+    tramaAnte.innerHTML = tramaInp.value;
+})
+let prezzoInp = document.querySelector("#prezzo");
+let prezzoAnte = document.querySelector("#prezzoAnte");
+
+prezzoInp.addEventListener("blur", function(){
+    prezzoAnte.innerHTML = prezzoInp.value;
+})
+
+let personaggiInp = document.querySelector("#personaggi");
+let personaggiAnte = document.querySelector("#personaggiAnte");
