@@ -20,10 +20,10 @@
         <div class="row position-relative">
             <form action="#" method="get" id="elForm"><br>
                 <label for="username" class="form-label">Username</label><br>
-                <input type="text" name="username" class="form-control" minlength="5" id="elUsername"><br>
+                <input type="text" name="username" class="form-control" minlength="5" id="elUsername" required><br>
                 <label for="message" class="form-label">Messaggio</label><br>
                 <textarea name="message" class="form-control" id="elMessage" cols="30" rows="10" maxlength="100" style="outline: none;"
-                    placeholder="Inserisci qui il tuo messaggio"></textarea><br>
+                    placeholder="Inserisci qui il tuo messaggio" required></textarea><br>
                 <small id="charCont">Caratteri rimanenti: 100</small>
                 <input type="submit" value="Invia" id="btnInvia" class="btn btn-primary position-absolute end-0 m-3">
             </form>

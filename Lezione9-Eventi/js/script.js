@@ -19,6 +19,7 @@ function resetForm() {
   username.value = "";
   message.value = "";
   charCont.textContent = 'Caratteri rimanenti: 100';
+  username.classList.remove("is-valid");
 }
 
 function inviaMessaggio(event) {
