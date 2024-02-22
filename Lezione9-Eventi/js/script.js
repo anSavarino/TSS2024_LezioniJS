@@ -48,25 +48,18 @@ message.addEventListener("input", logkey);
 function logkey() {
   let caratteri = 100 - this.value.length;
   charCont.textContent = `Caratteri rimanenti: ${caratteri}`
-  if (caratteri == 0 && !message.classList.contains("borderRed")) {
+  if (caratteri <= 0 ) {
     message.classList.add("is-invalid");
-    
+    let contenutoMsg = document.querySelector("#elMessage").value.substring(0, 100);
+    message.value = contenutoMsg;
+    charCont.textContent = "Caratteri rimanenti: 0";
+
   }else{
     message.classList.remove("is-invalid");
   }
 }
 
 // button clear
-
-const toastTrigger = document.getElementById('liveToastBtn')
-const toastLiveExample = document.getElementById('liveToast')
-
-if (toastTrigger) {
-  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-  toastTrigger.addEventListener('click', () => {
-    toastBootstrap.show()
-  });
-}
 
 function createToast(utente, text) {
   toastContainer.innerHTML += 
