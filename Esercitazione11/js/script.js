@@ -6,7 +6,6 @@ let messaggio = document.querySelector("#messaggio");
 let btnInvia = document.querySelector("#btnInvia");
 let charCont = document.querySelector("#charCont");
 let toastContainer = document.querySelector("#toastContainer");
-let toastContainerSinistra = document.querySelector("#toastContainerSinistra");
 let userConnesso = JSON.parse(this.localStorage.getItem("userConnesso"));
 let btnLogout = document.querySelector("#btnLogout");
 
