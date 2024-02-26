@@ -67,7 +67,7 @@ function logout() {
   window.location = "./login.html"
 }
 
-//Creazione Toast
+
 let toastCounter = 0; 
 function createToast(user,text) {
   let toastID = user.toLowerCase()+"-toast-"+(toastCounter++);
@@ -92,7 +92,8 @@ let pres = document.querySelector("#presentazione");
 pres.innerHTML = `Ciao ${userConnesso.user}, questa è la tua password ${userConnesso.password}`;
 
 
-//Scrittura messaggi apertura pagina
+// let listMessaggi =JSON.parse(this.localStorage.getItem("messaggi") || "[]");
+
 arrayMessaggi.forEach(element => {
   createToast(element.utente, element.text);
 });
