@@ -21,17 +21,22 @@ fetch(URL)
  */
 function creaItem(prodotto){
     let li = document.createElement("li");
-    li.setAttribute("class", "list-group-item");
+    li.setAttribute("class", "list-group-item d-flex align-items-center");
     
     let img = document.createElement("img");
     img.setAttribute("src", prodotto.thumbnail);
-    img.setAttribute("class", "img-responsive dimImg");
+    img.setAttribute("class", "img-responsive dimImg rounded m-2");
+    img.setAttribute("style", "aspect-ratio:auto; object-fit: contain;");
     
     li.textContent = prodotto.brand + " " + prodotto.title + " - € " + prodotto.price;
     li.insertBefore(img, li.firstChild);
 
     let btnAddCarrello = document.createElement("button");
-    btnAddCarrello.setAttribute("class", "btn btn-primary position-absolute end-0 me-3");
+    btnAddCarrello.setAttribute("class", "btn btn-primary align-self-end  m-auto me-3");
+    btnAddCarrello.setAttribute("data-bs-toggle", "tooltip");
+    btnAddCarrello.setAttribute("data-bs-title", "Aggiungi");
+    btnAddCarrello.setAttribute("data-bs-placement", "right");
+    btnAddCarrello.setAttribute("data-bs-custom-class", "custom-tooltip");
     btnAddCarrello.innerHTML = "<i class='bi bi-cart'></i>";
 
     btnAddCarrello.addEventListener("click", function(){
@@ -40,6 +45,8 @@ function creaItem(prodotto){
     })
 
     li.appendChild(btnAddCarrello);
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
     return li;
 }

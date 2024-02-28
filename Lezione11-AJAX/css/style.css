@@ -11,3 +11,8 @@
   width: 20%;
   height: auto;
 }
+
+.custom-tooltip {
+  --bs-tooltip-bg: #0a58ca;
+  --bs-tooltip-color: var(--bs-white);
+}
