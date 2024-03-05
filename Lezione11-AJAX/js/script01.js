@@ -47,3 +47,25 @@ function creaCardUser(user) {
 // function fail() {}
 // promessa.then();
 // il metodo then è una promise. Soddisfatta se arrivano i dati, sennò no. Devo aspettare che il server risponda
+
+
+let promessa = new Promise((success, fail)=>{
+  let numero = Math.random();
+
+  if(numero < 0.5){
+    setTimeout(() => {
+      success("Bravo, sei sotto 0.5")
+    }, 2000);
+  }else{
+    setTimeout(() => {
+      fail("Mi spiace, sei sopra 0.5")
+    }, 2000);
+  }
+
+  console.log(numero);
+});
+
+promessa.then(//then soddisfa request
+  result =>{console.log(result)}, //promise fullfeed
+  error => {console.log(error)} //promise not fullfeed
+)
