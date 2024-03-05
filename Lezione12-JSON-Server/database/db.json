@@ -1,0 +1,94 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "studenti": [
+    {
+      "id": "1",
+      "nome": "Paola",
+      "cognome": "Rossi"
+    },
+    {
+      "id": "2",
+      "nome": "Mario",
+      "cognome": "Verdi"
+    },
+    {
+      "id": "3",
+      "nome": "Anna",
+      "cognome": "Bianchi"
+    },
+    {
+      "id": "68bf",
+      "nome": "Pasquale",
+      "cognome": "Gialli"
+    },
+    {
+      "id": "2fff",
+      "nome": "Angelo",
+      "cognome": "Savarnino"
+    }
+  ],
+  "rubrica": [
+    {
+      "id": "1",
+      "nome": "Angelo Bianchi",
+      "email": "angelosavarino",
+      "tel": "3284354654"
+    },
+    {
+      "id": "5bd4",
+      "nome": "Best Makoumba",
+      "email": "bestthebest@gmail.com",
+      "tel": "23567853456"
+    },
+    {
+      "id": "dbb9",
+      "nome": "Andrea Rizzo",
+      "email": "andrea@gmail.com",
+      "tel": "32455667788"
+    },
+    {
+      "id": "2f2a",
+      "nome": "Angelo ",
+      "email": "angelosavarino@gmail.com",
+      "tel": "23567853456"
+    },
+    {
+      "id": "9d78",
+      "nome": "Dario Mennillo",
+      "email": "dariomennillo@gmail.com",
+      "tel": "325446547"
+    },
+    {
+      "id": "4477",
+      "nome": "Eliana Bove",
+      "email": "weliana@gmail.com",
+      "tel": "323465754"
+    }
+  ]
+}
