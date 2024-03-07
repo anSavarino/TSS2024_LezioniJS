@@ -55,40 +55,196 @@
   ],
   "rubrica": [
     {
-      "id": "1",
-      "nome": "Angelo Bianchi",
-      "email": "angelosavarino",
-      "tel": "3284354654"
+      "id": "3",
+      "nome": "Giuseppe Verdi",
+      "email": "giuseppeverdi@example.com",
+      "tel": "3303456789"
     },
     {
-      "id": "5bd4",
-      "nome": "Best Makoumba",
-      "email": "bestthebest@gmail.com",
-      "tel": "23567853456"
+      "id": "5",
+      "nome": "Roberto Russo",
+      "email": "robertorusso@example.com",
+      "tel": "3325678901"
     },
     {
-      "id": "dbb9",
-      "nome": "Andrea Rizzo",
-      "email": "andrea@gmail.com",
-      "tel": "32455667788"
+      "id": "6",
+      "nome": "Giovanna Esposito",
+      "email": "giovannaesposito@example.com",
+      "tel": "3336789012"
     },
     {
-      "id": "2f2a",
-      "nome": "Angelo ",
+      "id": "7",
+      "nome": "Marco Ferrari",
+      "email": "marcoferrari@example.com",
+      "tel": "3347890123"
+    },
+    {
+      "id": "8",
+      "nome": "Francesca Romano",
+      "email": "francescaromano@example.com",
+      "tel": "3358901234"
+    },
+    {
+      "id": "9",
+      "nome": "Antonio Ricci",
+      "email": "antonioricci@example.com",
+      "tel": "3369012345"
+    },
+    {
+      "id": "10",
+      "nome": "Anna Barbieri",
+      "email": "annabarbieri@example.com",
+      "tel": "3370123456"
+    },
+    {
+      "id": "11",
+      "nome": "Luigi Moretti",
+      "email": "luigimoretti@example.com",
+      "tel": "3381234567"
+    },
+    {
+      "id": "12",
+      "nome": "Chiara Colombo",
+      "email": "chiaracolombo@example.com",
+      "tel": "3392345678"
+    },
+    {
+      "id": "13",
+      "nome": "Fabio Conti",
+      "email": "fabioconti@example.com",
+      "tel": "3403456789"
+    },
+    {
+      "id": "14",
+      "nome": "Elena Gatti",
+      "email": "elenagatti@example.com",
+      "tel": "3414567890"
+    },
+    {
+      "id": "15",
+      "nome": "Alessandro De Luca",
+      "email": "alessandrodeluca@example.com",
+      "tel": "3425678901"
+    },
+    {
+      "id": "16",
+      "nome": "Sara Barbato",
+      "email": "sarabarbato@example.com",
+      "tel": "3436789012"
+    },
+    {
+      "id": "17",
+      "nome": "Paolo Martini",
+      "email": "paolomartini@example.com",
+      "tel": "3447890123"
+    },
+    {
+      "id": "18",
+      "nome": "Martina Giuliani",
+      "email": "martinagiuliani@example.com",
+      "tel": "3458901234"
+    },
+    {
+      "id": "20",
+      "nome": "Valentina Coppola",
+      "email": "valentinacoppola@example.com",
+      "tel": "3470123456"
+    },
+    {
+      "id": "21",
+      "nome": "Simone Ferrari",
+      "email": "simoneferrari@example.com",
+      "tel": "3481234567"
+    },
+    {
+      "id": "22",
+      "nome": "Arianna Rizzo",
+      "email": "ariannarizzo@example.com",
+      "tel": "3492345678"
+    },
+    {
+      "id": "23",
+      "nome": "Marco Santoro",
+      "email": "marcosantoro@example.com",
+      "tel": "3503456789"
+    },
+    {
+      "id": "24",
+      "nome": "Giulia Ferri",
+      "email": "giuliaferri@example.com",
+      "tel": "3514567890"
+    },
+    {
+      "id": "25",
+      "nome": "Luca Esposito",
+      "email": "lucaesposito@example.com",
+      "tel": "3525678901"
+    },
+    {
+      "id": "26",
+      "nome": "Federica Ricci",
+      "email": "federicaricci@example.com",
+      "tel": "3536789012"
+    },
+    {
+      "id": "27",
+      "nome": "Andrea De Angelis",
+      "email": "andreadeangelis@example.com",
+      "tel": "3547890123"
+    },
+    {
+      "id": "28",
+      "nome": "Silvia Monti",
+      "email": "silviamonti@example.com",
+      "tel": "3558901234"
+    },
+    {
+      "id": "29",
+      "nome": "Roberto Mariani",
+      "email": "robertomariani@example.com",
+      "tel": "3569012345"
+    },
+    {
+      "id": "30",
+      "nome": "Cristina Longo",
+      "email": "cristinalongo@example.com",
+      "tel": "3570123456"
+    },
+    {
+      "id": "31",
+      "nome": "Daniele Gatti",
+      "email": "danielegatti@example.com",
+      "tel": "3581234567"
+    },
+    {
+      "id": "32",
+      "nome": "Elisa De Luca",
+      "email": "elisadeluca@example.com",
+      "tel": "3592345678"
+    },
+    {
+      "id": "33",
+      "nome": "Giovanni Ferrara",
+      "email": "giovanniferrara@example.com",
+      "tel": "3603456789"
+    },
+    {
+      "id": "34",
+      "nome": "Chiara Esposito",
+      "email": "chiaraesposito@example.com",
+      "tel": "3614567890"
+    },
+    {
+      "id": "e608",
+      "nome": "Angelo Savarino",
       "email": "angelosavarino@gmail.com",
-      "tel": "23567853456"
+      "tel": "3285647335"
     },
     {
-      "id": "9d78",
+      "id": "a4b3",
       "nome": "Dario Mennillo",
-      "email": "dariomennillo@gmail.com",
-      "tel": "325446547"
-    },
-    {
-      "id": "4477",
-      "nome": "Eliana Bove",
-      "email": "weliana@gmail.com",
-      "tel": "323465754"
+      "email": "mennillo@immaginazioneelavoro.it",
+      "tel": "32894593479"
     }
   ]
 }
