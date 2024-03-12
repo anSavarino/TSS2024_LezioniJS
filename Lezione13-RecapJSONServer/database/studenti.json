@@ -1,0 +1,28 @@
+{
+  "studenti": [
+    {
+      "id": "1",
+      "nome": "Pippo",
+      "cognome": "Rossi",
+      "corso": "TSS"
+    },
+    {
+      "id": 1,
+      "nome": "Mickey",
+      "cognome": "Mouse",
+      "corso": "TSS"
+    },
+    {
+      "id": "4",
+      "nome": "Maria",
+      "cognome": "Gestione",
+      "corso": "TSS"
+    },
+    {
+      "id": "4",
+      "nome": "Maria",
+      "cognome": "Gestione",
+      "corso": "TSS"
+    }
+  ]
+}
