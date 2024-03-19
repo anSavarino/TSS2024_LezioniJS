@@ -56,7 +56,7 @@
         {
             "id": "bcs123",
             "nome": "Dario Mennillo",
-            "tratt2": ["2", "1"],
+            "tratte": ["2", "1"],
             "email": "dario.mennillo@mail.com",
             "pagamento": "cartaDiCredito"
         }
