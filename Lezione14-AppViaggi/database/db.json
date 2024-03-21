@@ -1,64 +1,74 @@
 {
-    "viaggi": [
+  "viaggi": [
+    {
+      "id": "1",
+      "tratta": "Torino - Napoli",
+      "costo": 100,
+      "mezzo": "treno",
+      "durata": "6h",
+      "data": "20/03/2024",
+      "postiDisponibili": 30,
+      "tipologia": [
         {
-            "id":"1",
-            "tratta": "Torino - Napoli",
-            "costo": 100,
-            "mezzo": "treno",
-            "durata": "6h",
-            "data": "20/03/2024",
-            "postiDisponibili": 30,
-            "tipologia":[
-                {
-                    "nome": "Bussiness",
-                    "costo": 50
-                },
-                {
-                    "nome": "Premium",
-                    "costo": 20
-                },
-                {
-                    "nome": "Base",
-                    "costo": 0
-                }
-            ],
-            "locandina": "https://hips.hearstapps.com/hmg-prod/images/napoli-1653914862.png",
-            "disponibilita": true
+          "nome": "Bussiness",
+          "costo": 50
         },
         {
-            "id":"2",
-            "tratta": "Roma - Barcellona",
-            "costo": 150,
-            "mezzo": "Aereo",
-            "durata": "2h",
-            "data": "20/03/2024",
-            "postiDisponibili": 10,
-            "tipologia":[
-                {
-                    "nome": "Bussiness",
-                    "costo": 50
-                },
-                {
-                    "nome": "Premium",
-                    "costo": 20
-                },
-                {
-                    "nome": "Base",
-                    "costo": 0
-                }
-            ],
-            "locandina": "https://www.10cose.it/wp-content/uploads/2015/08/barcellona.jpg",
-            "disponibilita": true
-        }
-    ],
-
-    "bigliettiAcquistati": [
+          "nome": "Premium",
+          "costo": 20
+        },
         {
-            "id": "bcs123",
-            "nome": "Dario Mennillo",
-            "tratte": ["2", "1"],
-            "email": "dario.mennillo@mail.com",
-            "pagamento": "cartaDiCredito"
+          "nome": "Base",
+          "costo": 0
         }
-    ]
+      ],
+      "locandina": "https://hips.hearstapps.com/hmg-prod/images/napoli-1653914862.png",
+      "disponibilita": true
+    },
+    {
+      "id": "2",
+      "tratta": "Roma - Barcellona",
+      "costo": 150,
+      "mezzo": "Aereo",
+      "durata": "2h",
+      "data": "20/03/2024",
+      "postiDisponibili": 10,
+      "tipologia": [
+        {
+          "nome": "Bussiness",
+          "costo": 50
+        },
+        {
+          "nome": "Premium",
+          "costo": 20
+        },
+        {
+          "nome": "Base",
+          "costo": 0
+        }
+      ],
+      "locandina": "https://www.10cose.it/wp-content/uploads/2015/08/barcellona.jpg",
+      "disponibilita": true
+    }
+  ],
+  "bigliettiAcquistati": [
+    {
+      "id": "bcs123",
+      "nome": "Dario Mennillo",
+      "tratte": [
+        "2",
+        "1"
+      ],
+      "email": "dario.mennillo@mail.com",
+      "pagamento": "cartaDiCredito"
+    },
+    {
+      "id": "26af",
+      "nome": "Angelo Savarino",
+      "email": "angelosavarino@gmail.com",
+      "tratte": [
+        "1"
+      ]
+    }
+  ]
 }
