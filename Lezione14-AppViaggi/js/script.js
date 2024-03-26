@@ -8,7 +8,7 @@ let btnCart = document.querySelector("#btnCart");
 function creaCarouselItem(viaggio) {
   let divCarousel = document.createElement("div");
   divCarousel.setAttribute("class", "carousel-item position-relative");
-  divCarousel.setAttribute("style", "height: 400px")
+  // divCarousel.setAttribute("style", "height: 400px")
   let img = document.createElement("img");
   img.setAttribute("src", viaggio.locandina);
   img.setAttribute("class", "d-block w-100 img-thumbnail rounded border border-black");
@@ -96,4 +96,4 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
   interval: 2000,
   touch: false,
 });
-//---------------------------------------------
+
