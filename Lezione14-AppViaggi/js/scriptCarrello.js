@@ -29,11 +29,6 @@ function caricaAcquisti() {
       first.setAttribute("selected", "");
       
       select.addEventListener("change", ()=>{
-        
-        // selection = Number(document.querySelector("#typeSelect"+viaggio.id).value);
-        // cost+=selection;
-        // totale.innerHTML = `${cost}€`;
-        // cost-=selection;
         calcolaTotale();
         totale.innerHTML = `${cost}€`;
       })
