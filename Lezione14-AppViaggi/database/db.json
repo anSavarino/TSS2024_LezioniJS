@@ -190,6 +190,26 @@
       "tratte": [
         "1"
       ]
+    },
+    {
+      "id": "fb4c",
+      "nome": "Angelo Savarino",
+      "email": "angelo@mail.it",
+      "metodoPagamento": "carta-di-credito",
+      "tratte": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "id": "12c4",
+      "nome": "as",
+      "email": "wqewe",
+      "metodoPagamento": "carta-di-credito",
+      "tratte": [
+        "1",
+        "2"
+      ]
     }
   ]
 }

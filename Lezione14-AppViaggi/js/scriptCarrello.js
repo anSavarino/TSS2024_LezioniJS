@@ -13,7 +13,7 @@ function caricaAcquisti() {
       let li = document.createElement("li");
       li.innerHTML = `${viaggio.tratta} - ${viaggio.costo}€`;
       let select = document.createElement("select");
-      select.setAttribute("class", "form-select");
+      select.setAttribute("class", "form-select w-auto d-inline");
       select.setAttribute("id", "typeSelect"+viaggio.id);
       viaggio.tipologia.forEach((costo) => {
         let option = document.createElement("option");
@@ -23,17 +23,19 @@ function caricaAcquisti() {
       });
       li.append(select);
       listViaggi.append(li);
-      let selection = Number(document.querySelector("#typeSelect"+viaggio.id).value);
+      // let selection = Number(document.querySelector("#typeSelect"+viaggio.id).value);
       cost+= viaggio.costo;
       let first = document.querySelector("#typeSelect"+viaggio.id+" option");
       first.setAttribute("selected", "");
       
       select.addEventListener("change", ()=>{
         
-        selection = Number(document.querySelector("#typeSelect"+viaggio.id).value);
-        cost+=selection;
+        // selection = Number(document.querySelector("#typeSelect"+viaggio.id).value);
+        // cost+=selection;
+        // totale.innerHTML = `${cost}€`;
+        // cost-=selection;
+        calcolaTotale();
         totale.innerHTML = `${cost}€`;
-        cost-=selection;
       })
     });
     totale.innerHTML = `${cost}€`;
@@ -47,7 +49,13 @@ window.addEventListener("DOMContentLoaded", ()=>{
   caricaAcquisti()
 });
 
-
+function calcolaTotale() {
+  cost=0;
+  viaggi.forEach(viaggio => {
+    let selection = Number(document.querySelector("#typeSelect"+viaggio.id).value);
+    cost += viaggio.costo + selection ;
+  });
+}
 
 class Biglietto {
   constructor(nome, email, pagamento, tratte) {
@@ -81,7 +89,7 @@ btnCompra.addEventListener("click", () => {
       body: JSON.stringify(biglietto),
     }).then((data) => {
       return data.json();
-    }).finally(()=>{
+    }).then(()=>{
       localStorage.clear();
       window.location.href = "thank.html";
   });
