@@ -1,0 +1,20 @@
+<hr>
+<h1>Studenti di Hogwarts</h1>
+<div class="row row-cols-1 row-cols-md-3 g-4" >
+    <div class="col" *ngFor="let studente of listaStudenti">
+        <div class="card shadow">
+            <img src="{{studente.img}}" class="card-img-top" alt="...">
+            <div class="card-img-overlay position-relative">
+                <a href="#" class="btn btn-primary posi">Go somewhere</a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{studente.nome}} {{studente.cognome}}</h5>
+                <p class="card-text">Corsi frequentati:</p>
+                <ul *ngFor="let corso of studente.corsi">
+                    <li>{{corso}}</li>
+                </ul>
+                <p>Presenza ad almeno 50% delle lezioni: <span >{{ studente.presenza?'Si':'No' }}</span></p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<!-- * = direttiva di renderizzazione -->
+<ul *ngFor="let panino of listaPanini"> 
+    <li>
+        {{panino.nome | uppercase}}. Ingredienti:
+        <ul *ngFor="let ingrediente of panino.ingredienti">
+            <li>
+                {{ingrediente}}
+            </li>
+        </ul>
+        <!-- | microdirettiva -->
+        <strong>{{panino.prezzo | currency: "EUR"}}</strong>
+    </li>
+
+</ul>

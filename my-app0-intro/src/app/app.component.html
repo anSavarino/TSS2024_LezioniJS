@@ -1,0 +1,33 @@
+<!-- {{}} mustache-doppio baffo: INTERPOLAZIONE/PROPERTY BINDING-->
+
+<h1 class="txtBlue">Ciao da {{title}}</h1>
+<h2>Autore dell'app: {{autore}}</h2>
+
+<hr>
+<h3>Mio Studente</h3>
+<p>
+  {{studente.nome}} {{studente.cognome}} matricola:{{studente.matricola}}
+</p>
+
+<!-- Event Binding -->
+<button (click)="stampaInConsole()">Saluta</button>
+
+<!-- Con un metodo, collegato ad un evento, modifico una proprietà di classe -->
+<hr>
+<h1>{{benvenuto}}</h1>
+<button class="btn btn-primary" (click)="onStampaBenvenuto()">Stampa Benvenuto</button>
+<h3>
+<!-- Non posso prendere saluto poichè è solo una variabile definita in un metodo e non una proprietà -->
+<!-- {{saluto}} -->
+</h3>
+
+<p class="txtRed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, veniam laboriosam expedita temporibus illo, veritatis repellat eaque ab obcaecati officia natus pariatur quas voluptatibus? Repellendus ab blanditiis culpa, accusamus id tempora veniam nulla eos quas at quisquam sunt voluptas voluptatem natus doloremque harum rerum dicta in. A cumque veritatis cum.</p>
+
+<!-- PER POTER VEDERE UN  COMPONENT LO DEVO RICHIAMARE TRAMITE IL SUO SELETTORE -->
+<app-primo></app-primo>
+
+<div class="container">
+  <h2>Menu' Panini</h2>
+  <app-lista-panini></app-lista-panini>
+  <app-lista-studenti></app-lista-studenti>
+</div>
