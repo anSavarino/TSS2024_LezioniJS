@@ -1,0 +1,10 @@
+<div class="card col">
+    <img class="card-img-top" src="{{docente.img}}" />
+    <div class="card-body">
+        <h4 class="card-title">{{docente.nome}} {{docente.cognome}} </h4>
+        <p class="card-text">Corso: {{docente.corso}} </p>
+        <p class="card-text">Presenza: {{docente.presenza}} </p>
+
+        <button class="btn btn-danger" (click)="onModPresenza()">Cambia Presenza</button>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<h1 class="mt-2">lista giochi</h1>
+
+<div class="row row-cols-4">
+
+    
+    <app-gioco *ngFor="let gioco of listaGiochi" [giocoSingolo]="gioco"></app-gioco>
+
+</div>
+
+<div class="row">
+    <app-edit-gioco (onGioco)="onAggiungiGioco($event)"></app-edit-gioco>
+</div>

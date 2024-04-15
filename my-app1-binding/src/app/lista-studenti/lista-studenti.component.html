@@ -1,0 +1,41 @@
+<div class="container mt-5 ">
+    <h2>Lista Studenti</h2>
+
+    <ul>
+        <!-- *ng-For è una direttiva, directive. L' * rappresenta una direttiva di renderizzazione -->
+        <li *ngFor="let studente of listaStudenti; index as i ">
+            {{studente.nome}} {{studente.cognome}} -
+
+            <!-- L'ngClass è un attribute binding e viene gestito come un oggetto -->
+            <span [ngClass]="{
+                txtRed: !studente.presenza, 
+                txtUnder: !studente.presenza,
+                txtGreen: studente.presenza
+                }">
+                Presenza: {{studente.presenza ? "Presente" : "Assente"}}
+            </span>
+
+            <!-- <ul *ngIf="studente.corsi != null; else noCorsi" [ngClass]="{bgPurple: studente.corsi != null}"> -->
+            <ul *ngIf="studente.corsi != null; else noCorsi">
+
+                <strong>Iscrizione Corsi:</strong>
+                <li *ngFor="let corso of studente.corsi">
+                    {{corso}}
+                </li>
+            </ul>
+
+            <button type="button" class="btn btn-primary" (click)="onCambiaPresenza(i)">
+                Cambia Presenza
+            </button>
+
+            <!-- #noCorsi si chiama LocalReference -->
+            <ng-template #noCorsi>
+                <br>
+                <strong>Lo studente non è iscritto a nessun corso</strong>
+                <br>
+            </ng-template>
+
+        </li>
+    </ul>
+
+</div>

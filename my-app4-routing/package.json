@@ -1,5 +1,5 @@
 {
-  "name": "my-app0-intro",
+  "name": "my-app4-routing",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -10,7 +10,6 @@
   },
   "private": true,
   "dependencies": {
-    "-": "^0.0.1",
     "@angular/animations": "^17.3.0",
     "@angular/common": "^17.3.0",
     "@angular/compiler": "^17.3.0",
@@ -20,13 +19,12 @@
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
     "bootstrap": "^5.3.3",
-    "g": "file:angular/cli@latest",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.0.10",
+    "@angular-devkit/build-angular": "^17.3.2",
     "@angular/cli": "^17.3.2",
     "@angular/compiler-cli": "^17.3.0",
     "@types/jasmine": "~5.1.0",

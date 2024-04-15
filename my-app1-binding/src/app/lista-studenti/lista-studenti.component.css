@@ -1,0 +1,15 @@
+.txtRed{
+    color: red;
+}
+
+.txtGreen{
+    color: green;
+}
+
+.txtUnder{
+    text-decoration: underline;
+}
+
+.bgPurple{
+    background-color: purple;
+}

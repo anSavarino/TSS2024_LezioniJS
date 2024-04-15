@@ -1,0 +1,28 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-6">
+            <h3>Chi siamo</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias adipisci hic, minima eligendi modi beatae asperiores reiciendis possimus nihil sed architecto a deleniti quod alias molestiae nulla velit voluptas optio.
+            Sapiente quae assumenda, maxime alias delectus odio</p>
+
+            <div class="list-group">
+
+               <a [routerLink]="['chiSiamo/docenti']"  class="list-group-item">Docenti</a>
+               <a [routerLink]="['chiSiamo/studenti']"  class="list-group-item">Studenti</a>
+               <a [routerLink]="['chiSiamo/corsi']"  class="list-group-item">Corsi</a>
+
+            </div>
+
+
+
+            
+        </div>
+        <div class="col-6">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+
+
+</div>

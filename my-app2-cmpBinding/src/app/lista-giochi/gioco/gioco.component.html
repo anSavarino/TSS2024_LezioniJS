@@ -1,0 +1,9 @@
+<!-- <div class="card text-start col" [ngClass]="{'bg-warning': giocoSingolo.genere=='videogame', 'bg-success': giocoSingolo.genere=='da tavolo'}"> -->
+<div class="card text-start col" [ngClass]="assegnaColore(giocoSingolo)">
+    <img class="card-img-top" style="width: auto; height: 275px;" src="{{giocoSingolo.locandina}}" alt="Title" />
+    <div class="card-body">
+        <h4 class="card-title">{{giocoSingolo.nome}}</h4>
+        <p class="card-text">Anno di uscita: {{giocoSingolo.annoUscita}}</p>
+        <p class="card-text">Giocatori: {{giocoSingolo.numGiocatori}}</p>
+    </div>
+</div>

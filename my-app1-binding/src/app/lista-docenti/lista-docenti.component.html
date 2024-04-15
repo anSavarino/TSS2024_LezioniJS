@@ -1,0 +1,8 @@
+<div class="container mt-5">
+    <div class="row row-cols-3">
+        <!-- [docente] = "docente" 
+        A sinistra il nome della prop dichiarata nel child
+        A destra la propr dichiarata nel parent, in questo caso è il docente dell ngFor, cioè il singolo docente della listaDocenti -->
+        <app-docente *ngFor="let docente of listaDocenti" [docente]="docente"></app-docente>
+    </div>
+</div>
