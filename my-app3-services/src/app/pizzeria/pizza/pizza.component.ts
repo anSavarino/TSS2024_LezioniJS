@@ -16,7 +16,7 @@ export class PizzaComponent implements OnInit{
   
   ngOnInit(): void {
     //recupero id in maniera statica
-    let idPizza: number = +this.actRoute.snapshot.params['id'];
+    let idPizza = +this.actRoute.snapshot.params['id'];
     this.pizza = this.pizzaServ.getPizzaById(idPizza);
   
     this.actRoute.params.subscribe(

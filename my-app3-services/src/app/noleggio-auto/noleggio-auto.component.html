@@ -1,0 +1,10 @@
+<div class="container">
+    <h2>Parco Auto</h2>
+        <ul>
+            <li *ngFor="let auto of autos">
+                {{auto.id}} - {{auto.marca}} - {{auto.modello}}
+            </li>
+        </ul>
+
+        <button class="btn btn-primary" (click)="onAddAuto()">Add Auto</button>
+</div>

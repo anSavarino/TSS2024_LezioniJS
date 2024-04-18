@@ -1,0 +1,54 @@
+{
+  "cars": [
+    {
+      "id": "0",
+      "marca": "Peugeot",
+      "modello": "2008"
+    },
+    {
+      "id": "1",
+      "marca": "Fiat",
+      "modello": "500"
+    },
+    {
+      "id": "2",
+      "marca": "Renault",
+      "modello": "Clio"
+    },
+    {
+      "id": "3",
+      "marca": "Ford",
+      "modello": "Fiesta"
+    },
+    {
+      "id": "4",
+      "marca": "Volkswagen",
+      "modello": "Golf"
+    },
+    {
+      "id": "5",
+      "marca": "Audi",
+      "modello": "A3"
+    },
+    {
+      "id": "6",
+      "marca": "BMW",
+      "modello": "Serie 1"
+    },
+    {
+      "id": "7",
+      "marca": "Mercedes",
+      "modello": "Classe A"
+    },
+    {
+      "id": "8",
+      "marca": "Toyota",
+      "modello": "Yaris"
+    },
+    {
+      "id": "9",
+      "marca": "Hyundai",
+      "modello": "i20"
+    }
+  ]
+}

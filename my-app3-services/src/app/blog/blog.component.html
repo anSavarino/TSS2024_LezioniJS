@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Blog Post</h2>
+    <p>Questi post sono recuperati da dummyJSON</p>
+
+    <ul>
+        <li *ngFor="let post of mieiPosts">
+            {{post.id}} - {{post.title}}
+            <p>{{post.body}}</p>
+        </li>
+    </ul>
+</div>

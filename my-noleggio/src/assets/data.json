@@ -1,0 +1,28 @@
+{
+    "ami": [
+        {
+            "id": 0,
+            "marca": "Tubertini",
+            "nome": "Serie TL-1 Barbed",
+            "prezzo": 4.30,
+            "img": "https://www.sampey.it/48505-large_default/ami-tubertini-serie-tl-1-barbed.jpg",
+            "disponibilita": true
+        },
+        {
+            "id": 1,
+            "marca": "Tubertini",
+            "nome": "Serie 172 Ardiglione Ferma Esca",
+            "prezzo": 4.30,
+            "img": "https://www.sampey.it/58057-large_default/ami-tubertini-serie-172-ardiglione.jpg",
+            "disponibilita": false
+        },
+        {
+            "id": 2,
+            "marca": "BKK",
+            "nome": "Red Octopus Beak Rossi Mare Mis",
+            "prezzo": 5.90,
+            "img": "https://www.sampey.it/41354-large_default/ami-bkk-red-octopus-beak-rossi-mare.jpg",
+            "disponibilita": true
+        }
+    ]
+}

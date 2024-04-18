@@ -4,6 +4,9 @@ import { HomeComponent } from './home/home.component';
 import { UtentiComponent } from './utenti/utenti.component';
 import { PizzeriaComponent } from './pizzeria/pizzeria.component';
 import { PizzaComponent } from './pizzeria/pizza/pizza.component';
+import { BirreriaComponent } from './birreria/birreria.component';
+import { BlogComponent } from './blog/blog.component';
+import { NoleggioAutoComponent } from './noleggio-auto/noleggio-auto.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -12,6 +15,9 @@ const routes: Routes = [
     // il :id indica che quel frammento è dinamicos
     {path:':id', component: PizzaComponent}
   ]},
+  {path: 'birreria', component: BirreriaComponent},
+  {path: 'blog', component: BlogComponent},
+  {path: 'noleggio', component: NoleggioAutoComponent}
 ];
 
 @NgModule({

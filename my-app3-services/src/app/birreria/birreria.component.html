@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Birreria</h2>
+    <div class="row cols">
+        <app-birra *ngFor="let birra of listaBirre" [birraInput] = birra (birraOutput)="onNomeBirra($event)"></app-birra>        
+        
+        <div *ngIf="marcaBirra != null; else noSelection" class="col-4">
+            
+            <h4>Stai acquistando {{marcaBirra}}</h4>
+            <p>Bevi responsabilmente</p>
+        </div>
+    </div>
+    
+    <ng-template #noSelection>
+        <p>Non hai ancora selezionato nulla</p>
+    </ng-template>
+    
+</div>
