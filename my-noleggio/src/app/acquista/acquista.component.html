@@ -1,1 +1,65 @@
-<p>acquista works!</p>
+
+  <!-- Modal -->
+
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Noleggia</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            
+                <div class="mb-3">
+                  <label for="elEmail" class="form-label">Indirizzo Email</label>
+                  <input type="email" class="form-control" [(ngModel)]="email">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="elAmo" class="form-label">Amo</label>
+                  <input type="text" class="form-control" [(ngModel)]="amo">
+                </div>
+                <div class="mb-3">
+                  <label for="elAmo" class="form-label">Metodo di Pagamento</label>
+                  <div class="form-check">
+                    <input class="form-check-input" value="carta-di-credito" type="radio" name="flexRadioDefault"
+                      id="flexRadioDefault1" checked>
+                    <label class="form-check-label" for="flexRadioDefault1"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                        <path
+                          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                      </svg>
+                      Carta di Credito
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" value="paypal" type="radio" name="flexRadioDefault"
+                      id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-paypal" viewBox="0 0 16 16">
+                        <path
+                          d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.35.35 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91q.57-.403.993-1.005a4.94 4.94 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.7 2.7 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.7.7 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016q.326.186.548.438c.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.87.87 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.35.35 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32z" />
+                      </svg>
+                      PayPal di Dario
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" value="satispay" type="radio" name="flexRadioDefault"
+                      id="flexRadioDefault3">
+                    <label class="form-check-label" for="flexRadioDefault2"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+                        <path
+                          d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z" />
+                      </svg>
+                      SatisPay
+                    </label>
+                  </div>
+                </div>
+             
+        </div>
+        <div class="modal-footer">
+          <button [routerLink]="['/noleggio']" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+          <button type="button" class="btn btn-primary">Noleggia</button>
+        </div>
+      </div>
+    </div>

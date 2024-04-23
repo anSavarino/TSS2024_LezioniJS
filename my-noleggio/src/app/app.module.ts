@@ -9,6 +9,7 @@ import { NoleggioComponent } from './noleggio/noleggio.component';
 import { AggiungiComponent } from './aggiungi/aggiungi.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AcquistaComponent } from './acquista/acquista.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AcquistaComponent } from './acquista/acquista.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

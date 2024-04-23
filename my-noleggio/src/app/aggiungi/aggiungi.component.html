@@ -1,1 +1,22 @@
-<p>aggiungi works!</p>
+<div class="container">
+    <form>
+        <h2>Aggiungi Amo &lt;3 </h2>    
+        <div class="mb-3">
+          <label for="elMarca" class="form-label">Marca</label>
+          <input type="text" class="form-control" name="marca" [(ngModel)]="marca">
+        </div>
+        <div class="mb-3">
+          <label for="elNome" class="form-label">Nome</label>
+          <input type="text" class="form-control" name="nome" [(ngModel)]="nome">
+        </div>
+        <div class="mb-3">
+            <label for="elPrezzo" class="form-label">Prezzo</label>
+            <input type="number" step=".01" class="form-control" name="prezzo" [(ngModel)]="prezzo">
+        </div>
+        <div class="mb-3">
+          <label for="elImmagine" class="form-label">Immagine</label>
+          <input type="text" class="form-control" name="immagine" [(ngModel)]="immagine">
+        </div>
+        <button type="submit" class="btn btn-primary" [routerLink]="['/noleggio']" routerLinkActive="router-link-active"  (click)="onAdd()">Aggiungi</button>
+      </form>
+</div>

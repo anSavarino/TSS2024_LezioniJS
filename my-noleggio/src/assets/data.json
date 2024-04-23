@@ -1,28 +1,51 @@
 {
-    "ami": [
-        {
-            "id": 0,
-            "marca": "Tubertini",
-            "nome": "Serie TL-1 Barbed",
-            "prezzo": 4.30,
-            "img": "https://www.sampey.it/48505-large_default/ami-tubertini-serie-tl-1-barbed.jpg",
-            "disponibilita": true
-        },
-        {
-            "id": 1,
-            "marca": "Tubertini",
-            "nome": "Serie 172 Ardiglione Ferma Esca",
-            "prezzo": 4.30,
-            "img": "https://www.sampey.it/58057-large_default/ami-tubertini-serie-172-ardiglione.jpg",
-            "disponibilita": false
-        },
-        {
-            "id": 2,
-            "marca": "BKK",
-            "nome": "Red Octopus Beak Rossi Mare Mis",
-            "prezzo": 5.90,
-            "img": "https://www.sampey.it/41354-large_default/ami-bkk-red-octopus-beak-rossi-mare.jpg",
-            "disponibilita": true
-        }
-    ]
+  "ami": [
+    {
+      "id": 0,
+      "marca": "Tubertini",
+      "nome": "Serie TL-1 Barbed",
+      "prezzo": 4.3,
+      "img": "https://www.sampey.it/48505-large_default/ami-tubertini-serie-tl-1-barbed.jpg",
+      "disponibilita": false
+    },
+    {
+      "id": 1,
+      "marca": "Tubertini",
+      "nome": "Serie 172 Ardiglione Ferma Esca",
+      "prezzo": 4.3,
+      "img": "https://www.sampey.it/58057-large_default/ami-tubertini-serie-172-ardiglione.jpg",
+      "disponibilita": false
+    },
+    {
+      "id": 2,
+      "marca": "BKK",
+      "nome": "Red Octopus Beak Rossi Mare Mis",
+      "prezzo": 5.9,
+      "img": "https://www.sampey.it/41354-large_default/ami-bkk-red-octopus-beak-rossi-mare.jpg",
+      "disponibilita": true
+    },
+    {
+      "id": "f53c",
+      "marca": "Jatsui",
+      "nome": "2 Ami Drifting Tonno con Girella",
+      "prezzo": 16.9,
+      "img": "https://www.sampey.it/41117-large_default/2-ami-drifting-tonno-con-girella-jatsui-382bn-tuna.jpg",
+      "disponibilita": true
+    },
+    {
+      "id": "8997",
+      "marca": "Kaptura",
+      "nome": "5 Ami Drifting Tonno Girella",
+      "prezzo": 9.9,
+      "img": "https://www.sampey.it/45595-large_default/ami-drifting-tonno-girella-kaptura-ferrari-special.jpg",
+      "disponibilita": true
+    }
+  ],
+  "acquisti": [
+    {
+      "email": "angelo@mail.com",
+      "id_amo": 0,
+      "pagamento": "Paypal"
+    }
+  ]
 }

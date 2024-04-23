@@ -1,36 +1,28 @@
 <div class="container">
-    <router-outlet></router-outlet>
+    
     <h2>I Nostri Ami</h2>
     <div class="row row-cols-3 g-4">
-        <!-- <ul>
-            <li *ngFor="let amo of ami">
-                {{amo.id}} - {{amo.marca}} - {{amo.nome}} - {{amo.prezzo | currency}}
-            </li>
-        </ul> -->
+        
         <div  *ngFor="let amo of ami" class="col">
             
-            <div *ngIf="amo.disponibilita; else noDisponibile" class="card" style="width: 18rem;">
+            <div [ngClass]="{'text-bg-danger': !amo.disponibilita}" class="card" style="width: 18rem;">
                 <img src="{{amo.img}}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{amo.marca}}</h5>
                     <h6 class="card-title">{{amo.nome}}</h6>
                     <p class="card-text">{{amo.prezzo | currency}}</p>
-                    <a href="#" class="btn btn-primary">Noleggia</a>
+                    <a [routerLink]="['/noleggio/acquista']" *ngIf="amo.disponibilita; else elseBlock" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Noleggia</a>
+                    <ng-template #elseBlock>
+                        <a class="btn btn-primary disabled">Non Disponibile</a>
+                    </ng-template>
                 </div>
             </div>
-
-            <ng-template #noDisponibile>
-                <div class="card text-bg-danger" style="width: 18rem;">
-                    <img src="{{amo.img}}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">{{amo.marca}}</h5>
-                        <h6 class="card-title">{{amo.nome}}</h6>
-                        <p class="card-text">{{amo.prezzo | currency}}</p>
-                        <a class="btn btn-primary disabled">Non disponibile</a>
-                    </div>
-                </div>
-            </ng-template>
         </div>
+
     </div>
     
 </div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <router-outlet></router-outlet>
+  </div>
