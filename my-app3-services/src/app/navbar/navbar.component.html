@@ -31,7 +31,7 @@
                 <li class="nav-item">
                     <a class="nav-link" [routerLink]="['/blog']">Blog</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" *ngIf="show">
                     <a class="nav-link" [routerLink]="['/noleggio']">Noleggio Auto</a>
                 </li>
             </ul>

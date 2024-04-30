@@ -15,6 +15,8 @@ import { BirraComponent } from './birreria/birra/birra.component';
 import { BlogComponent } from './blog/blog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NoleggioAutoComponent } from './noleggio-auto/noleggio-auto.component';
+import { NoAuthComponent } from './no-auth/no-auth.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { NoleggioAutoComponent } from './noleggio-auto/noleggio-auto.component';
     BirreriaComponent,
     BirraComponent,
     BlogComponent,
-    NoleggioAutoComponent
+    NoleggioAutoComponent,
+    NoAuthComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
