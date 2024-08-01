@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inserimento Dati via API REST</title>
+</head>
+<body>
+    <h1>Inserisci Dati</h1>
+    <form id="dataForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="value">Valore:</label>
+        <input type="number" id="value" name="value" required><br>
+        <button type="submit">Invia</button>
+    </form>
+
+    <script>
+        document.getElementById('dataForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const value = document.getElementById('value').value;
+
+            const data = { name: name, value: parseInt(value) };
+
+            try {
+                const response = await fetch('http://localhost:8080/api/data', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    const responseData = await response.json();
+                    alert('Dati inseriti con successo: ' + JSON.stringify(responseData));
+                } else {
+                    alert('Errore durante l\'inserimento dei dati');
+                }
+            } catch (error) {
+                console.error('Errore:', error);
+                alert('Errore durante l\'inserimento dei dati');
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acquista Biglietto Cinema</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h2>Acquista Biglietto Cinema</h2>
+            </div>
+            <div class="card-body">
+                <form id="ticketForm">
+                    <div class="form-group">
+                        <label for="movieTitle">Titolo del Film:</label>
+                        <input type="text" class="form-control" id="movieTitle" value="Film Selezionato" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="ticketCost">Costo del Biglietto:</label>
+                        <input type="text" class="form-control" id="ticketCost" value="10.00€" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantità:</label>
+                        <input type="number" class="form-control" id="quantity" min="1" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="paymentMethod">Modalità di Pagamento:</label>
+                        <select class="form-control" id="paymentMethod">
+                            <option value="creditCard">Carta di Credito</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="bankTransfer">Bonifico Bancario</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Acquista</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acquista Biglietto Cinema</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h2>Acquista Biglietto Cinema</h2>
+            </div>
+            <div class="card-body">
+                <form id="ticketForm">
+                    <div class="form-group">
+                        <label for="movieTitle">Titolo del Film:</label>
+                        <input type="text" class="form-control" id="movieTitle" value="Film Selezionato" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="ticketCost">Costo del Biglietto:</label>
+                        <input type="text" class="form-control" id="ticketCost" value="10.00€" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantità:</label>
+                        <input type="number" class="form-control" id="quantity" min="1" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="paymentMethod">Modalità di Pagamento:</label>
+                        <select class="form-control" id="paymentMethod">
+                            <option value="creditCard">Carta di Credito</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="bankTransfer">Bonifico Bancario</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Acquista</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        document.getElementById('ticketForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const movieTitle = document.getElementById('movieTitle').value;
+            const quantity = parseInt(document.getElementById('quantity').value);
+            
+            try {
+                // Fetch total seats available
+                const seatsResponse = await fetch('/api/checkSeats');
+                const seatsData = await seatsResponse.json();
+                const totalSeats = seatsData.totalSeats;
+
+                // Fetch remaining tickets for the movie
+                const ticketsResponse = await fetch(`/api/checkTickets?movie=${encodeURIComponent(movieTitle)}`);
+                const ticketsData = await ticketsResponse.json();
+                const remainingTickets = ticketsData.remainingTickets;
+
+                if (quantity > remainingTickets) {
+                    alert(`Errore: ci sono solo ${remainingTickets} biglietti rimanenti per questo spettacolo.`);
+                } else if (quantity > totalSeats) {
+                    alert(`Errore: il numero di posti disponibili nel teatro è ${totalSeats}.`);
+                } else {
+                    alert('Biglietti disponibili! Procedi con il pagamento.');
+                    // Procedi con il processo di pagamento o altre logiche necessarie
+                }
+            } catch (error) {
+                console.error('Errore:', error);
+                alert('Si è verificato un errore durante il controllo della disponibilità dei biglietti.');
+            }
+        });
+    </script>
+</body>
+</html>
